@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>My First Web Page</title>
+        <link rel="stylesheet" href="css/index.css">
+        <script>
+            function add(){
+                var foods = [];
+                var f = prompt("What is your favourite food");
+                foods[foods.length]=f;
+                document.getElementById('fd').innerHTML=foods;
+            }
+        </script>
+    </head>
+    <Body>
+        <header>
+            <h1>About Myself</h1>
+            <nav>
+            <a href="a.html">One</a> <a href="b.html">Two</a> <a href="c.html">Three</a> <a href="d.html">Four</a>
+            </nav>
+        </header>
+        <section class="a">
+            <h2>Favorite Foods</h2>
+            <ul><button onclick="add(this)">Add more foods</button>
+                <li id="fd"></li>
+                <li>Apples</li>
+                <li>Paneer</li>
+                <li>Cake</li>
+            </ul>
+        </section>
+        <section class="abc">
+            <h2 id="b">Achievements</h2>
+            <p>Progress in this course(100%) <progress max="100" value="100"></progress></p>
+            <p>Progress in this Specialization capstone(20%) <progress max="100" value="20"></progress></p>
+            <p>Today's Target(80%) <progress max="100" value="80"></progress></p>
+        </section>
+        <section class="c">
+            <h2>More About Me</h2>
+            <details>
+                <summary>My Childhood</summary>
+                <p>I grew up in a small village name Baniyana. I miss those days.</p>
+            </details>
+        </section>
+        <footer>
+            <img src=" http://www.intro-webdesign.com/images/newlogo.png" alt="WD4E Logo."> <span>This page was created by Ayush. To learn more about web design, visit <a href="http://intro-webdesign.com">Intro to Web Design</a>.</span>
+        </footer>
+    </Body>
+</html>
